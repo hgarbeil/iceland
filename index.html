@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iceland Trip 2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+</head>
+<body>
+    <h1 class="Page-title">Iceland 2023</h1>
+    <div class="main-content">
+        <div id="top-weather" class="weather-tile tiles"><h2>Weather</h2></div>
+        <div class="itinerary-tile tiles" onclick="loadItinerary()"><h2>Itinerary</h2></div>
+        <div class="hike-tile tiles"><h2>Hikes</h2></div>
+        <div class="activities-tile tiles"><h2>Activities</h2></div>
+       
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+    <script src="ajax-utils.js"></script>
+    <script src="script.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
