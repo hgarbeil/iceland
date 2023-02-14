@@ -1,5 +1,8 @@
-1, Keflavik, Reykjavik, Arrive Keflavik, 64.1466, -21.9426,https://www.airbnb.com/rooms/762223455793567426?check_in=2023-05-23&check_out=2023-05-24&guests=1&adults=3&s=67&unique_share_id=fb44e6f1-cdd5-4092-a687-099a0a0dbcc4
-2, Reykjavik, Grundarfjordur, 64.925, -23.260, Drive, Grund i Grudifjordi
-3, Grundarfjordur, Sudavik, 66.0302,-22.9897, 
-4, Sudavik, Boroeyri, 65.2087, -21.0984
-5,
+1, Keflavik, Reykjavik, Arrive Keflavik, 64.1466, -21.9426,Fly in; Sightsee; Walk Laugavegur; Museums,Southwest-Guesthouse
+2, Reykjavik, Grundarfjordur, 64.925, -23.260, Drive; Gerduberg Cliffs; Ytri Tunga Seal Bach; Arnastappi Cliff Walk; Bjarnarfoss; Kirkufell;Grundarfoss, Grund i Grudifjordi
+3, Grundarfjordur, Sudavik, 66.0302,-22.9897, Drive-Ferry-Drive; SnaefellijokullNational Park;Stykkisholmur (Fish & Chips); Westfjords; Vansfjordur; Pollurinn Hot Springs; etc, Sudavik Apartment
+4, Sudavik, Boroeyri, 65.2087, -21.0984, Valagil Waterfall hike; Hot Pools; Isafjordur (Museum of Everyday Life); Sudavik(Arctic Fox Center); Holmavik(Museum of Icelandic Sorcery and Witchcraft), Tangahaus Guesthaus
+5,Boroeyri, Siglufjordur,66.1512, -18.9113, Drive;Fosslaug Hot Springs;Hike Tindastoll, Hotel Siglunes
+6, Siglufjordur, Akureyri, 65.6828, -18.0907, Drive; Migandifoss; Hike near Dalvik (Kofi Hut Trail); Akureyri Botanical Gardens, Ice Apartments Akureyri
+7, Akureyri, Myvatn,65.6039, -16.9961, Husavik Geosea Thermal Baths; Asbyrgi; Various Hikes, Elda Guesthouse
+
