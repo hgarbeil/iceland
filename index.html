@@ -13,7 +13,21 @@
 <body>
     <h1 class="Page-title">Iceland 2023</h1>
     <div class="main-content">
-        <div id="top-weather" class="weather-tile tiles"><h2>Current Weather</h2></div>
+        <div  class="weather-tile tiles">
+            <h2>Current Weather</h2>
+            <div class="weather-select">
+                <label>Town : </label>
+                <select class="select-city">
+
+                </select> 
+                <input type="Submit" value="Update" onclick="newcity()"> 
+                <div id="top-weather">
+
+                </div>
+            </div>
+
+            
+        </div>
         <div class="itinerary-tile tiles" onclick="loadItinerary()"><h2>Itinerary</h2></div>
         <div class="hike-tile tiles"><h2>Hikes</h2></div>
         <div class="activities-tile tiles" onclick="loadActivities()"><h2>Activities</h2></div>
