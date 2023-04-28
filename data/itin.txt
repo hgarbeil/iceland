@@ -1,13 +1,16 @@
-1, Keflavik, Reykjavik, Arrive Keflavik, 64.1466, -21.9426,Fly in; Sightsee; Walk Laugavegur; Museums,Southwest-Guesthouse
-2, Reykjavik, Grundarfjordur, Drive,64.925, -23.260, Drive; Gerduberg Cliffs; Ytri Tunga Seal Bach; Arnastappi Cliff Walk; Bjarnarfoss; Kirkufell;Grundarfoss, Grund i Grudifjordi
-3, Grundarfjordur, Sudavik, Drive,66.0302,-22.9897, Drive-Ferry-Drive; SnaefellijokullNational Park;Stykkisholmur (Fish & Chips); Westfjords; Vansfjordur; Pollurinn Hot Springs; etc, Sudavik Apartment
+Day,Start,End,ToDo,Lat,Lon,Activities,Stay
+0, Boston-Logan,Keflavik,Fly day, 64.0, -22.5583,Fly; Arrive; Short Walk,South-West Guesthouse
+1, Keflavik, Reykjavik, Arrive Keflavik, 64.1466, -21.9426,Rental Car; Sightsee; Walk Laugavegur; Museums,Guestroom in Bryndis House
+2, Reykjavik, Grundarfjordur, Drive,64.925, -23.260, Drive; Gerduberg Cliffs; Ytri Tunga Seal Beach; Arnastappi Cliff Walk; Bjarnarfoss; Kirkufell;Grundarfoss, Grund i Grudifjordi
+3, Grundarfjordur, Sudavik, Drive,66.0302,-22.9897, Drive-Ferry-Drive; Snaefellijokull National Park;Stykkisholmur (Fish & Chips); Westfjords; Vansfjordur; Pollurinn Hot Springs; etc, Sudavik Apartment
 4, Sudavik, Boroeyri, Drive,65.2087, -21.0984, Valagil Waterfall hike; Hot Pools; Isafjordur (Museum of Everyday Life); Sudavik(Arctic Fox Center); Holmavik(Museum of Icelandic Sorcery and Witchcraft), Tangahaus Guesthaus
-5,Boroeyri, Siglufjordur,Drive,66.1512, -18.9113, Drive;Fosslaug Hot Springs;Hike Tindastoll, Hotel Siglunes
+5,Boroeyri, Siglufjordur,Drive,66.1512, -18.9113, Drive; Fosslaug Hot Springs;Hike Tindastoll, Hotel Siglunes
 6, Siglufjordur, Akureyri, Drive,65.6828, -18.0907, Drive; Migandifoss; Hike near Dalvik (Kofi Hut Trail); Akureyri Botanical Gardens, Ice Apartments Akureyri
-7, Akureyri, Myvatn,Drive,65.6039, -16.9961, Husavik Geosea Thermal Baths; Asbyrgi; Various Hikes, Elda Guesthouse
-8,Myvatn, Seydisfjordur,Drive,65.2598,-14.010,Hike and baths, Hafaldan Hostel
-9,Seydisfjordur,Hofn,Drive,64.297,-15.202,Hike;Breiddalsvik,Guesthouse Dyngja
-10,Hofn,Klaustur,Drive,63.789,-18.054,Fjardrgljufun Canyon,Hvoll Hostel
-11,Hofn,Hofn,Drive,63.789,-18.054,Fjardrgljufun Canyon,Hvoll Hostel
-12,Hofn,Vik, Drive,63.4186,-19.006,Plane Crash, Puffin Hostel Vik
-13,Vik,Hvolsvollur,Drive, 63.752,-20.2209, ,Midgard Base Camp
+7, Akureyri, Myvatn,Drive,65.6039, -16.9961, Godafoss; Husavik Geosea Thermal Baths; Asbyrgi Canyon; Various Hikes, Elda Guesthouse
+8,Myvatn, Seydisfjordur,Drive,65.2598,-14.010,Hike and baths; Walk to Dettifoss and Selfoss; Namaskdaard Pass, Hafaldan Hostel
+9,Seydisfjordur,Hofn,Drive,64.297,-15.202,Seydisfjordur sightsee;Skalanes Nature Preserve;Hike to Hengifoss;Breiddalsvik,Guesthouse Dyngja
+10,Hofn,Klaustur,Drive,63.789,-18.054,Jokulsarlon & Diamond Beach;Fjardrgljufun Canyon,Hvoll Hostel
+11,Klaustur,Klaustur,Drive,63.789,-18.054,Fjardrgljufun Canyon,Hvoll Hostel
+12,Klaustur,Vik, Drive,63.4186,-19.006,Reyjnisfjara Beach; Plane Crash, Puffin Hostel Vik
+13,Vik,Hvolsvollur,Drive, 63.752,-20.2209, Golden Circle;Skogafoss Hike (behind waterfall); Plane crash; Seljalandsfoss,Midgard Base Camp
+14,Hvolsvollur,Keflavik,Drive, 64.0, -22.5583, Golden Circle Drive; Short Walk,South-West Guesthouse

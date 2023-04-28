@@ -1,5 +1,5 @@
 :root {
-    --background: rgba(85,214,170,.9);
+    --background: rgba(85,110,170,.9);
 }
 
 body {
@@ -21,6 +21,8 @@ h1 {
     flex-wrap: wrap ;
     
 }
+
+
 
 .tiles {
 
@@ -88,4 +90,60 @@ h1 {
 .mapdiv {
     width: 80% ;
     height:500px ;
+}
+
+
+.content-table {
+    border-collapse :collapse ;
+    margin: 50px  ;
+    font-size: 0.9rem ;
+    /* min-width: 450px ; */
+    border-radius: 5px 5px 0 0 ;
+    overflow: hidden ;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    align-self: center ;
+    
+}
+
+.content-table thead tr {
+    
+    background-color: #00cf68 ;
+    color: white ;
+    text-align: left ;
+    font-weight: bold ;
+}
+
+.content-table tbody th, 
+.content-table tbody td
+ {
+
+    padding: 12px 15px ;
+
+
+}
+
+.content-table tbody tr {
+    border-bottom : 1px solid #dddddd ;
+    background-color: white ;
+    color: black ;
+}
+
+.content-table tbody tr.active:nth-of-type(odd) {
+    background-color: #ffaa00 ;
+    color: yellow;
+}
+.content-table tbody tr.active:nth-of-type(even) {
+    background-color: #ffaa00 ;
+    color: yellow;
+}
+
+
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 4px solid #009879 ;
 }

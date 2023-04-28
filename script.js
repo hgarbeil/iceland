@@ -14,7 +14,9 @@ function loadItinerary(){
     var map = L.map('mapid').setView([64.9, -19.], 6);
     var hikeFlag = true ;
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 10,
+    minZoom: 6,
+    maxBounds:[[68,-25],[55,-15]],
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
@@ -25,23 +27,167 @@ function loadItinerary(){
 
     var tableEl = document.createElement('table');
     tableEl.classList.add ('content-table') ;
+    var theadEl = document.createElement('thead');
+    var tbodyEl = document.createElement('tbody');
+    mainconEL.appendChild(tableEl);
+    tableEl.appendChild(theadEl);
+    tableEl.appendChild(tbodyEl);
     $ajaxUtils.sendGetRequest ('data/itin.txt', function(responseText){
-        console.log(responseText);
+        
         var lines = responseText.split('\n');
-        for (var ind=0; ind<lines.length-1; ind++) {
-            var cells=lines[ind].split(',');
+        var l0 = lines[0];
+        var myTr = document.createElement('tr');
+        myTr.classList.add('tr-head');
+        var cells=l0.split(',');
+        for (var i=0; i<cells.length;i++){
+            if (i>=4 && i<6) {
+                console.log(i);
+                continue;
+            }
+            var myTh = document.createElement('th');
+            myTh.innerHTML = cells[i];
+            myTr.appendChild(myTh);
+        }
+        theadEl.appendChild(myTr);
+
+
+        for (var ind=1; ind<lines.length; ind++) {
+
+            myTr = document.createElement('tr');
+            
+            cells=lines[ind].split(',');
             var markerOptions = {
-                title:'Day # '+cells[0],
+                title:cells[0],
                 clickable:true,
                 icon:itinIcon
             }
+            console.log(cells[5]);
             var marker = L.marker([cells[4],cells[5]],markerOptions);
             marker.bindPopup(cells[0]+': '+cells[2]).openPopup();
             marker.addTo(map);
+            marker.on("click", function(event){
+                clickedMarker(event.target.options.title) ;
+                highlightRow(event.target.options.title);
+            });
+            for (var icol=0;icol<8; icol++){
+                if (icol>=4 && icol< 6) {
+                    continue;
+                }
+                var myTd = document.createElement('td');
+                myTd.classList.add('priority-low');
+                myTd.innerText=cells[icol];
+                myTr.appendChild(myTd);
+            }
+            tbodyEl.appendChild(myTr);
+            
         }
+        
 
+       
     }, false) ;
 
 
 
+}
+
+function loadActivities(){
+    console.log("load activities") ;
+    mainconEL.innerHTML =  `
+    <div id="mapid" class="mapdiv"></div>` ;
+    var map = L.map('mapid').setView([64.9, -19.], 6);
+    var hikeFlag = true ;
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 10,
+    minZoom: 6,
+    maxBounds:[[68,-25],[55,-15]],
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var itinIcon = L.icon({
+        iconUrl: 'data/bed-bug.png',
+        iconSize: [32,32]
+    });
+
+    var tableEl = document.createElement('table');
+    tableEl.classList.add ('content-table') ;
+    var theadEl = document.createElement('thead');
+    var tbodyEl = document.createElement('tbody');
+    mainconEL.appendChild(tableEl);
+    tableEl.appendChild(theadEl);
+    tableEl.appendChild(tbodyEl);
+    $ajaxUtils.sendGetRequest ('data/activ.txt', function(responseText){
+        
+        var lines = responseText.split('\n');
+        var l0 = lines[0];
+        var myTr = document.createElement('tr');
+        myTr.classList.add('tr-head');
+        var cells=l0.split(',');
+        for (var i=0; i<cells.length;i++){
+            if (i>=4 && i<6) {
+                console.log(i);
+                continue;
+            }
+            var myTh = document.createElement('th');
+            myTh.innerHTML = cells[i];
+            myTr.appendChild(myTh);
+        }
+        theadEl.appendChild(myTr);
+
+
+        for (var ind=1; ind<lines.length; ind++) {
+
+            myTr = document.createElement('tr');
+            
+            cells=lines[ind].split(',');
+            var markerOptions = {
+                title:cells[0],
+                clickable:true
+                // icon:itinIcon
+            }
+            console.log(cells[1]);
+            var marker = L.marker([cells[2],cells[3]],markerOptions);
+            marker.bindPopup(cells[0]+': '+cells[1]).openPopup();
+            marker.addTo(map);
+            marker.on("click", function(event){
+                clickedMarker(event.target.options.title) ;
+                highlightRow(event.target.options.title);
+            });
+            for (var icol=0;icol<4; icol++){
+                if (icol>4 && icol< 6) {
+                    continue;
+                }
+                var myTd = document.createElement('td');
+                myTd.classList.add('priority-low');
+                myTd.innerText=cells[icol];
+                myTr.appendChild(myTd);
+            }
+            tbodyEl.appendChild(myTr);
+            
+        }
+        
+
+       
+    }, false) ;
+
+
+
+}
+
+function highlightRow (num){
+    var num1 = parseInt(num) + 1 ;
+    tableEl = document.querySelector (".content-table" ) ;
+    console.log(num1);
+    for (var i=0; i<tableEl.rows.length; i++){
+        tableEl.rows[i].classList.remove ('active') ;
+    }
+
+    tableEl.rows[num1].classList.add ('active') ;
+    if (num1 == 15){
+        tableEl.rows[1].classList.add ('active') ;
+    }
+    
+}
+
+function clickedMarker (num) {
+    // console.log(myhikes[num]);
 }
