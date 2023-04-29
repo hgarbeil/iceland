@@ -113,8 +113,8 @@ function newcity () {
     let index = selectEl.value ;
     // console.log ("index is "+index);
     // console.log ("town arr lat is "+townArr[index].lat);
-    townLat= towns[index-1].lat ;
-    townLon = towns[index-1].lon ;
+    townLat= towns[index].lat ;
+    townLon = towns[index].lon ;
     console.log("townLat is ",townLat);
     updateWeather (townLat, townLon) ;
 
