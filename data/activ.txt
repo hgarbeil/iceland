@@ -3,8 +3,10 @@ Day, Activity, Lat,Lon,Type
 1, National Museum of Iceland,64.1335471,-22.0172447,Museum
 3, Snæfellsjökull National Park,64.8067597,-23.818144,Park
 4, Isafjordur (Museum of Everyday Life),66.0708963,-23.12244,Museum
+5, Fosslaug Waterfall and HotSpring, 64.9955541,-20.19193,HotSprings
 7, Viti Crater, 65.4636042,-17.450705,Hike
 9, Vatnajokull National Park,64.7843002,-17.2091078,Park
-12, Plane Crash,63.4909158,-19.363426, Plane
+12, Plane Crash,63.4909158,-19.363426,Plane
 13, Skogafoss (Waterfall),63.5048067,-19.7932307,Hike
 13, Blue Lagoon, 63.879695,-22.448596,HotSprings
+13, Sky Lagoon, 64.1149469,-21.9975714,HotSprings

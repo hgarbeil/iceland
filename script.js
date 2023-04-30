@@ -114,6 +114,7 @@ function loadActivities(){
     mainconEL.appendChild(tableEl);
     tableEl.appendChild(theadEl);
     tableEl.appendChild(tbodyEl);
+    var activcount=0 ;
     $ajaxUtils.sendGetRequest ('data/activ.txt', function(responseText){
         
         var lines = responseText.split('\n');
@@ -154,6 +155,9 @@ function loadActivities(){
                 case 'Park':
                     iconfile = 'data/icons8-national-park-50.png';
                     break;
+                case 'HotSprings':
+                    iconfile = 'data/icons8-hot-springs-50.png';
+                    break;
                 default :
                     iconfile = "https://unpkg.com/leaflet@1.5.1/dist/images/marker-icon.png" ;
                     break ;
@@ -170,7 +174,7 @@ function loadActivities(){
 
             }
             var markerOptions = {
-                title:cells[0],
+                title:activcount.toString(),
                 clickable:true,
                 icon:markerIcon
             };
@@ -178,9 +182,10 @@ function loadActivities(){
             marker.bindPopup(cells[0]+': '+cells[1]).openPopup();
             marker.addTo(map);
             marker.on("click", function(event){
-                clickedMarker(event.target.options.title) ;
+                // clickedMarker(event.target.options.title) ;
                 highlightRow(event.target.options.title);
             });
+            
             for (var icol=0;icol<5; icol++){
                 if (icol>4 && icol< 6) {
                     continue;
@@ -191,7 +196,7 @@ function loadActivities(){
                 myTr.appendChild(myTd);
             }
             tbodyEl.appendChild(myTr);
-            
+            activcount=activcount+1;
         }
         
 
