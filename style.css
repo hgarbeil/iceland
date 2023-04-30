@@ -72,6 +72,10 @@ h1 {
     color: white ;
 }
 
+.weather-select * {
+    height: 1.5rem ;
+}
+
 .weather-tile {
     background-image : url("https://source.unsplash.com/400x400/?iceland?night?sky") ;
     background-position: center ;

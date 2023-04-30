@@ -61,7 +61,7 @@ function loadItinerary(){
                 clickable:true,
                 icon:itinIcon
             }
-            console.log(cells[5]);
+            
             var marker = L.marker([cells[4],cells[5]],markerOptions);
             marker.bindPopup(cells[0]+': '+cells[2]).openPopup();
             marker.addTo(map);
@@ -91,7 +91,6 @@ function loadItinerary(){
 }
 
 function loadActivities(){
-    console.log("load activities") ;
     mainconEL.innerHTML =  `
     <div id="mapid" class="mapdiv"></div>` ;
     var map = L.map('mapid').setView([64.9, -19.], 6);
@@ -123,7 +122,7 @@ function loadActivities(){
         myTr.classList.add('tr-head');
         var cells=l0.split(',');
         for (var i=0; i<cells.length;i++){
-            if (i>=4 && i<6) {
+            if (i>4 && i<6) {
                 console.log(i);
                 continue;
             }
@@ -139,12 +138,42 @@ function loadActivities(){
             myTr = document.createElement('tr');
             
             cells=lines[ind].split(',');
+            
+            switch (cells[4]){
+                case 'Hike':
+                    iconfile = 'data/icons8-hiking-50.png';
+                    break ;
+                case 'Food':
+                    console.log("in food", cells[1]);
+                    iconfile = 'data/icons8-restaurant-on-site-24.png';
+                    //iconfile = 'data/icons8-hiking-50.png';
+                    break ;
+                case 'Museum':
+                    iconfile = 'data/icons8-museum-50.png';
+                    break ;
+                case 'Park':
+                    iconfile = 'data/icons8-national-park-50.png';
+                    break;
+                default :
+                    iconfile = "https://unpkg.com/leaflet@1.5.1/dist/images/marker-icon.png" ;
+                    break ;
+                
+            };
+            const markerIcon = L.icon({
+                iconSize: [25, 41],
+                iconAnchor: [10, 41],
+                popupAnchor: [2, -40],
+                // specify the path here
+                iconUrl: iconfile,
+              });
+            if (cells[4]=='Hike'){
+
+            }
             var markerOptions = {
                 title:cells[0],
-                clickable:true
-                // icon:itinIcon
-            }
-            console.log(cells[1]);
+                clickable:true,
+                icon:markerIcon
+            };
             var marker = L.marker([cells[2],cells[3]],markerOptions);
             marker.bindPopup(cells[0]+': '+cells[1]).openPopup();
             marker.addTo(map);
@@ -152,7 +181,7 @@ function loadActivities(){
                 clickedMarker(event.target.options.title) ;
                 highlightRow(event.target.options.title);
             });
-            for (var icol=0;icol<4; icol++){
+            for (var icol=0;icol<5; icol++){
                 if (icol>4 && icol< 6) {
                     continue;
                 }
@@ -191,3 +220,5 @@ function highlightRow (num){
 function clickedMarker (num) {
     // console.log(myhikes[num]);
 }
+
+

@@ -16,7 +16,6 @@ var selectHTML = function loadSelect(){
         var lines = responseText.split('\n');
         
         for (var icity=1 ; icity<lines.length; icity++){
-            console.log(lines[icity]);
             var cells = lines[icity].split(',');
             let town={
                 "id": cells[0],
@@ -29,10 +28,8 @@ var selectHTML = function loadSelect(){
             var selEl = document.createElement('option');
             selEl.value= cells[0] ;
             selEl.text=cells[2];
-            console.log(selEl);
             selectEl.appendChild(selEl);
             selectEl.value = 1 ;
-            console.log(icity);
             
         };
     },false);
