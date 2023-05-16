@@ -123,10 +123,10 @@ function loadActivities(){
         myTr.classList.add('tr-head');
         var cells=l0.split(',');
         for (var i=0; i<cells.length;i++){
-            if (i>4 && i<6) {
-                console.log(i);
-                continue;
-            }
+            // if (i>4 && i<6) {
+            //     console.log(i);
+            //     continue;
+            // }
             var myTh = document.createElement('th');
             myTh.innerHTML = cells[i];
             myTr.appendChild(myTh);
@@ -192,13 +192,19 @@ function loadActivities(){
                 highlightRow(event.target.options.title);
             });
             
-            for (var icol=0;icol<5; icol++){
-                if (icol>4 && icol< 6) {
-                    continue;
-                }
+            for (var icol=0;icol<6; icol++){
                 var myTd = document.createElement('td');
-                myTd.classList.add('priority-low');
-                myTd.innerText=cells[icol];
+                if (icol==5 && cells[icol]!=undefined){
+                    // console.log(cells[i]);
+                    var link = '<a target="_blank" href='+cells[icol]+'>Website</a>' ;
+                    console.log(link);
+                    myTd.innerHTML = link ;
+                }
+                else {
+                
+                    myTd.classList.add('priority-low');
+                    myTd.innerText=cells[icol];
+                }
                 myTr.appendChild(myTd);
             }
             tbodyEl.appendChild(myTr);

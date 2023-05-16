@@ -1,33 +1,33 @@
-Day, Activity, Lat,Lon,Type
-0, Issi Fish and Chips, 63.9730415,-22.5417823,Food
-1, National Museum of Iceland,64.1335471,-22.0172447,Museum
-1, Reykjavik sightsee, 64.13548,-21.89541,Museum
-1, 101 Reykjavik street food,64.1459418,-21.935397,Food
-2, Gerduberg Cliffs,64.8606553,-22.3589141,Hike
-2, Arnastapi Cliffs Walk, 64.849852,-23.4144791,Hike
-2, Grundarfoss,64.9110443,-23.2213954,Waterfall
-2, Bjarnafoss,64.8480864,-23.4242317,Waterfall
-3, Dynjandi Waterfall Hike,65.7326128,-23.219217,Waterfall
-3, Snæfellsjökull National Park,64.8067597,-23.818144,Park
-3, Hellulaug Hot Pools,65.5726152,-23.192246,HotSprings
-3, Pollurinn Hot Springs,65.64907,-23.8974414,HotSprings
-3, The Troll Seat (Isafjordur),66.0596549,-23.1412144,Hike
-3, Isafjordur (Museum of Everyday Life),66.0708963,-23.12244,Museum
-4, Drangnes Hot Pools,65.6882096,-21.4508322,HotSprings
-4, Museum of Icelandic Sorcery & Witchcraft (Holmavik),65.7065671,-21.6681877,Museum
-5, Fosslaug Waterfall and HotSpring, 64.9955541,-20.19193,HotSprings
-5, Hofsos Pools,65.8984109,-19.4251799,HotSprings
-6, Kofi Trail (Dalvik),65.9819664,-18.563337,Hike
-6, Akureyri Botanical Garden,65.6523538,-18.1136978,Park
-6, Akureyri Town, 65.6523538,-18.1136978,Museum
-7, Asbyrgi Canyon,66.0305289,-16.4880116,Drive
-7, Dimmuborgir Lava Flow,65.5912203,-16.951185,Hike
-7, Viti Crater, 65.4636042,-17.450705,Hike
-8, Bjorgarfjordur,64.3527155,-22.158044,Hike
-8, Unaos Stepavik Hike,65.5771155,-14.100244,Hike
-9, Seydisfjordur (Town stuff),65.2627576,-14.0741755,Museum
-9, Vatnajokull National Park,64.7843002,-17.2091078,Park
-12, Plane Crash,63.4909158,-19.363426,Plane
-13, Skogafoss (Waterfall),63.5048067,-19.7932307,Hike
-13, Blue Lagoon, 63.879695,-22.448596,HotSprings
-13, Sky Lagoon, 64.1149469,-21.9975714,HotSprings
+Day, Activity, Lat,Lon,Type,Website
+0, Issi Fish and Chips, 63.9730415,-22.5417823,Food,http://issi.is/english/
+1, National Museum of Iceland,64.1335471,-22.0172447,Museum,https://www.thjodminjasafn.is/english/
+1, Reykjavik sightsee, 64.13548,-21.89541,Museum,https://guidetoiceland.is/reykjavik-guide/top-10-things-to-do-in-reykjavik
+1, 101 Reykjavik street food,64.1459418,-21.935397,Food,https://101reykjavikstreetfood.is
+2, Gerduberg Cliffs,64.8606553,-22.3589141,Hike,https://icelandtravelguide.is/locations/gerduberg-cliffs
+2, Arnastapi Cliffs Walk, 64.849852,-23.4144791,Hike,https://www.alltrails.com/trail/iceland/western/arnarstapi-gatklettur-hellnar?u=i
+2, Grundarfoss,64.9110443,-23.2213954,Waterfall,https://icelandtravelguide.is/locations/grundarfoss-waterfall/
+2, Bjarnafoss,64.8480864,-23.4242317,Waterfall,https://www.world-of-waterfalls.com/waterfalls/iceland-bjarnafoss/
+3, Dynjandi Waterfall Hike,65.7326128,-23.219217,Waterfall,https://www.world-of-waterfalls.com/waterfalls/iceland-dynjandi/
+3, Snæfellsjökull National Park,64.8067597,-23.818144,Park,https://guidetoiceland.is/travel-iceland/drive/snaefellsjoekull-national-park
+3, Hellulaug Hot Pools,65.5726152,-23.192246,HotSprings,https://www.wanderandsoul.com/inspiration/hellulaug
+3, Pollurinn Hot Springs,65.64907,-23.8974414,HotSprings,https://icelandtravelguide.is/locations/pollurinn-hot-spring-westfjords/
+3, The Troll Seat (Isafjordur),66.0596549,-23.1412144,Hike,https://www.westfjords.is/en/place/naustahvilft
+3, Isafjordur (Museum of Everyday Life),66.0708963,-23.12244,Museum,https://everydaylife.is
+4, Drangnes Hot Pools,65.6882096,-21.4508322,HotSprings,https://www.westfjords.is/en/place/drangsnes-hot-pots
+4, Museum of Icelandic Sorcery & Witchcraft (Holmavik),65.7065671,-21.6681877,Museum,https://galdrasyning.is/en/?lang=en
+5, Fosslaug Waterfall and HotSpring, 64.9955541,-20.19193,HotSprings,https://icelandtravelguide.is/locations/fosslaug-hot-spring/
+5, Hofsos Pools,65.8984109,-19.4251799,HotSprings,https://www.introducingiceland.com/hofsos
+6, Kofi Trail (Dalvik),65.9819664,-18.563337,Hike,https://www.alltrails.com/trail/iceland/northeastern/kofi-trail?u=i
+6, Akureyri Botanical Garden,65.6523538,-18.1136978,Park,https://www.lystigardur.akureyri.is/en
+6, Akureyri Town, 65.6523538,-18.1136978,Museum,https://www.visitakureyri.is/en
+7, Asbyrgi Canyon,66.0305289,-16.4880116,Drive,https://guidetoiceland.is/travel-iceland/drive/asbyrgi
+7, Dimmuborgir Lava Flow,65.5912203,-16.951185,Hike,https://guidetoiceland.is/connect-with-locals/regina/dimmuborgir---dark-fortress-in-myvatn
+7, Viti Crater, 65.4636042,-17.450705,Hike,https://www.alltrails.com/trail/iceland/northeastern/viti-crater?u=i
+8, Bjorgarfjordur,64.3527155,-22.158044,Hike,https://www.west.is/en/destinations/towns-regions/visit-borgarfjordur
+8, Unaos Stepavik Hike,65.5771155,-14.100244,Hike,https://www.alltrails.com/trail/iceland/eastern/stapavik--2?u=i
+9, Seydisfjordur (Town stuff),65.2627576,-14.0741755,Museum,https://visitseydisfjordur.com
+9, Vatnajokull National Park,64.7843002,-17.2091078,Park,https://en.vatnajokulsthjodgardur.is/en
+12, Plane Crash,63.4909158,-19.363426,Plane,https://guidetoiceland.is/connect-with-locals/jorunnsg/the-abandoned-dc-plane-on-solheimasandur
+13, Skogafoss (Waterfall),63.5048067,-19.7932307,Hike,https://guidetoiceland.is/travel-iceland/drive/skogafoss
+13, Blue Lagoon, 63.879695,-22.448596,HotSprings,https://www.bluelagoon.com
+13, Sky Lagoon, 64.1149469,-21.9975714,HotSprings,https://www.skylagoon.com
