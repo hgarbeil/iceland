@@ -13,4 +13,4 @@ Day,Start,End,ToDo,Lat,Lon,Activities,Stay
 11,Klaustur,Klaustur,Drive,63.789,-18.054,Fjardrgljufun Canyon,Hvoll Hostel
 12,Klaustur,Vik, Drive,63.4186,-19.006,Reyjnisfjara Beach; Plane Crash, Puffin Hostel Vik
 13,Vik,Hvolsvollur,Drive, 63.752,-20.2209, Golden Circle;Skogafoss Hike (behind waterfall); Plane crash; Seljalandsfoss,Midgard Base Camp
-14,Hvolsvollur,Keflavik,Drive, 64.0, -22.5583, Golden Circle Drive; Short Walk,South-West Guesthouse
+14,Hvolsvollur,Keflavik,Drive, 64.0, -22.5583, Golden Circle Drive; Short Walk; Fly Boston/Denmark,South-West Guesthouse
