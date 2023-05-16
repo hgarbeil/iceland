@@ -158,6 +158,12 @@ function loadActivities(){
                 case 'HotSprings':
                     iconfile = 'data/icons8-hot-springs-50.png';
                     break;
+                case 'Waterfall':
+                    iconfile ='data/waterfall.png';
+                    break;
+                case 'Drive':
+                    iconfile ='data/car.png';
+                    break;
                 default :
                     iconfile = "https://unpkg.com/leaflet@1.5.1/dist/images/marker-icon.png" ;
                     break ;
@@ -182,7 +188,7 @@ function loadActivities(){
             marker.bindPopup(cells[0]+': '+cells[1]).openPopup();
             marker.addTo(map);
             marker.on("click", function(event){
-                // clickedMarker(event.target.options.title) ;
+                // /clickedMarker(event.target.options.title) ;
                 highlightRow(event.target.options.title);
             });
             

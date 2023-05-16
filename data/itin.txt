@@ -1,6 +1,6 @@
 Day,Start,End,ToDo,Lat,Lon,Activities,Stay
 0, Boston-Logan,Keflavik,Fly day, 64.0, -22.5583,Fly; Arrive; Short Walk,South-West Guesthouse
-1, Keflavik, Reykjavik, Arrive Keflavik, 64.1466, -21.9426,Rental Car; Sightsee; Walk Laugavegur; Museums,Guestroom in Bryndis House
+1, Keflavik, Reykjavik, Arrive Keflavik, 64.1466, -21.9426,Rental Car; Sightsee; Walk Laugavegur; Museums; Bike rental,Guestroom in Bryndis House
 2, Reykjavik, Grundarfjordur, Drive,64.925, -23.260, Drive; Gerduberg Cliffs; Ytri Tunga Seal Beach; Arnastappi Cliff Walk; Bjarnarfoss; Kirkufell;Grundarfoss, Grund i Grudifjordi
 3, Grundarfjordur, Sudavik, Drive,66.0302,-22.9897, Drive-Ferry-Drive; Snaefellijokull National Park;Stykkisholmur (Fish & Chips); Westfjords; Vansfjordur; Pollurinn Hot Springs; etc, Sudavik Apartment
 4, Sudavik, Boroeyri, Drive,65.2087, -21.0984, Valagil Waterfall hike; Hot Pools; Isafjordur (Museum of Everyday Life); Sudavik(Arctic Fox Center); Holmavik(Museum of Icelandic Sorcery and Witchcraft), Tangahaus Guesthaus
