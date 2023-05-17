@@ -27,7 +27,12 @@ Day, Activity, Lat,Lon,Type,Website
 8, Unaos Stepavik Hike,65.5771155,-14.100244,Hike,https://www.alltrails.com/trail/iceland/eastern/stapavik--2?u=i
 9, Seydisfjordur (Town stuff),65.2627576,-14.0741755,Museum,https://visitseydisfjordur.com
 9, Vatnajokull National Park,64.7843002,-17.2091078,Park,https://en.vatnajokulsthjodgardur.is/en
+10, Vestrahorn,64.27335,-15.0292536,Hike,https://visitvatnajokull.is/how-to-get-to-the-famous-vestrahorn/
+10, Diamond Beach,64.0443509,-16.198304,Hike,https://icelandtravelguide.is/locations/the-diamond-beach/
+10,Fjadrgljufun Canyon Hike (was open May10),63.7769732,-18.1851363,Hike,https://www.alltrails.com/trail/iceland/southern/fjadrargljufur-canyon?u=i
+11,Skaftafell Preserve Visitor Center,64.0165098,-16.9691185,Hike,https://guidetoiceland.is/travel-iceland/drive/skaftafell
 12, Plane Crash,63.4909158,-19.363426,Plane,https://guidetoiceland.is/connect-with-locals/jorunnsg/the-abandoned-dc-plane-on-solheimasandur
+12, Reynisfjara Beach hike,63.4052747,-19.1107613,Drive,https://www.tripadvisor.com/Attraction_Review-g189978-d8004333-Reviews-Reynisfjara_Beach-Vik_South_Region.html
 13, Skogafoss (Waterfall),63.5048067,-19.7932307,Hike,https://guidetoiceland.is/travel-iceland/drive/skogafoss
 13, Blue Lagoon, 63.879695,-22.448596,HotSprings,https://www.bluelagoon.com
 13, Sky Lagoon, 64.1149469,-21.9975714,HotSprings,https://www.skylagoon.com

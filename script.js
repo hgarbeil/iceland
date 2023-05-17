@@ -164,6 +164,9 @@ function loadActivities(){
                 case 'Drive':
                     iconfile ='data/car.png';
                     break;
+                case 'Plane':
+                        iconfile ='data/icons8-plane-50.png';
+                        break;
                 default :
                     iconfile = "https://unpkg.com/leaflet@1.5.1/dist/images/marker-icon.png" ;
                     break ;
