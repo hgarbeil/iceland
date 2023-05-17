@@ -1,5 +1,13 @@
 :root {
-    --background: rgba(85,110,170,.9);
+    /* --background: rgba(85,110,170,.9); */
+    --color-logo : navy ;
+    --color-text : blue ;
+    --color-text-light : #cfcfcf ;
+    --color-text-dark : #116466 ;
+    --background : rgba(85, 214,170,.85);
+    --text-accent : rgb(120,100,125) ;
+    --hcolor : #aa35aa ;
+    --tshadow : 0 4px 8px rgba(0,0,0,.4) ;
 }
 
 body {
@@ -7,8 +15,28 @@ body {
     padding: 0px ;
     box-sizing: border-box ;
     background: var(--background);
+    background-image : url("https://source.unsplash.com/1200x1200/?iceland?summer") ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+
     font-family : sans-serif ;
     
+}
+
+header {
+    background : var(--background);
+    position : fixed ;
+    top: 0;
+    left: 0;
+    margin-left: 0px  ;
+    text-align: center ;
+    width: 100% ;
+    z-index: 999 ;
+    padding: 15px ;
+    color : var(--color-text);
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
 }
 
 h1 {
@@ -19,6 +47,7 @@ h1 {
     display:flex ;
     justify-content: space-evenly;
     flex-wrap: wrap ;
+    margin-top: 200px ;
     
 }
 
@@ -36,6 +65,47 @@ h1 {
     
 
 }
+
+.navbar ul {
+    list-style: none ;
+    margin: 0 ;
+    padding: 0 ;
+    display: flex ;
+    justify-content : space-apart ;
+
+}
+
+
+.navbar-links ul li a {
+
+    padding : 1.2rem ;
+    font-size : 1.2rem ;
+    color: var(--color-text) ;
+    text-decoration: none ;
+    display: block ;
+
+}
+
+
+.navbar-links li:hover, .navbar-links li:focus{
+    text-decoration: none ;
+    color: var(--color-text-dark) ;
+    background-color: dodgerblue ;
+    border-radius:5px ;
+}
+
+.navbar-links li a:hover { 
+    text-decoration: none ;
+    color: white ;
+    background-color: dodgerblue ;
+    border-radius:5px ;
+}
+
+.navbar-links li a:focus {
+    background-color : lightgreen ;
+}
+
+
 
 .tiles h2{
     background-color: rgba(0,0,0,.8) ;
